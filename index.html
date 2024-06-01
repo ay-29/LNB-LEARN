@@ -2,73 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARYA College - Arya College Information</title>
+    <title>Register an account</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #007bff;
+        body{
+            background: url(Dumbbell.jpg);
+            background-size: cover;
+            font-family: "Baloo Bhai",cursive;
             text-align: center;
         }
-        p {
-            color: #666;
+        h2{
+            color:white;/color by rgb value/
+            font-style: oblique;
+            /* background-color:white; */
+            height: 38px;
+            width: 1350px;
+            /* border: 8px solid #60DCA4; */
+            /* border-width: 8px;
+            border-color: #60DCA4;
+            border-style: solid; */
+            /* border-radius: 15px; */
+            /* background-image: url('http://127.0.0.1:5500/icons8-google-48.png'); */
+            border: 1px solid black ;
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-align: center;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        #mail{
+            /* color: rgb(113, 73, 150); */
+            background-color: rgb(235, 243, 239);
         }
-        li {
-            margin-bottom: 5px;
+        #Password{
+            /* color: rgb(113, 73, 150); */
+            background-color: rgb(235, 243, 239);
         }
-        .contact-info {
-            margin-top: 20px;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
+          #First{
+            font-family: "Baloo Bhai",cursive;
+            background-color: rgb(235, 243, 239);
         }
-        .contact-info p {
-            margin: 5px 0;
+          #Last{  
+           /* color: rgb(113, 73, 150); */
+            font-family: "Baloo Bhai",cursive;
+            background-color: rgb(235, 243, 239);
+        }
+          #Phone{
+            font-family: "Baloo Bhai",cursive;
+            background-color: rgb(235, 243, 239);
+        }
+        /* class selector */
+        .blackBoarder{
+            color: #60DCA4;/color by hex value/
+            /* background-color: rgb(194, 206, 200); */
+        }
+        input{
+            font-family: "Baloo Bhai", cursive;
+        }
+        label{
+            font-size:20px;
+            color:white
+        }
+        lable{
+           font-size:20px;
+           color:white;
+        }
+        .v{
+           color: grey;
+        }
+        #register{
+           <link href="Log In.html">
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to  LEARN AND BUILD page </h1>
-        <p> This page offers detailed information about the LEARN AND BUILD. </p>
-        
-        <h2>About Arya College</h2>
-        <p> Learn and build is a renowned institution dedicated to providing quality education in various fields.</p>
-        
-        <h1>Programs Offered</h1>
-        <ul>
-            <li> DATA SCIENCE </li>
-            <li> CLOUD </li>
-            <li> SALESFORCE (B.Com)</li>
-            <li> FRONT-END </li>
-            <li>MERN FULL STACK  (MBA)</li>
-            <li> AI/ML (M.Sc)</li>
-            <li> DATA SCENCE (Ph.D)</li>
-        </ul>
-        
-        <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Address: 262, learn and build, MUKTANAND NAGAR opp. POOJA TOWER, GOPAL PURA BYPAS,</p>
-            <p>Phone: 6375515548 </p>
-            <p>Email: info@aryacollege.com</p>
-        </div>
+    <h2>Register an account</h2>
+    <form action = "Log In.html">
+       <label for="First">FIRST NAME</label>
+    <div>
+        <input type="name" name="first name" placeholder = "First Name" id="First" required>
     </div>
+    <br>
+        <label for="Last">LAST NAME</label>
+    <div>
+        <input type="name" name="last name" placeholder = "Last Name" id="Last" required>
+    </div>
+     <br>
+    <label for="mail">E-MAIL</label>
+    <div>
+      <input type="email" name="MY E-MAIL" placeholder = "abc@xyz.com" id="mail">
+    </div>
+    <br>
+    <label for="password">PASSWORD</label>
+    <div>
+        <input type="password" name="password" placeholder = "Password" id="Password">
+    </div>
+    <br>
+     <label for="Phone">Phone</label>
+    <div>
+        <input type="tel" name="Phone" placeholder = "+91- " id="Phone">
+    </div>
+    <br>             
+     <label for="GENDER">GENDER</label>
+    <div class="v">
+        GENDER: MALE<input type="radio" name="MY GENDER" id="GENDER"> FEMALE <input type="radio" name="MY GENDER" id="GENDER"> OTHER <input type="radio" name="MY GENDER" id="GENDER">
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Register Now" id="register">
+        <input type="reset" value="Reset">
+    </div>
+    </form>
 </body>
 </html>
